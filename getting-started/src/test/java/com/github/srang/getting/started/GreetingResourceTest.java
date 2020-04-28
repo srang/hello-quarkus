@@ -1,4 +1,4 @@
-package com.github.srang;
+package com.github.srang.getting.started;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
@@ -15,7 +15,7 @@ public class GreetingResourceTest {
           .when().get("/hello")
           .then()
              .statusCode(200)
-             .body(is("Hello"));
+             .body(is("hello"));
     }
 
 }

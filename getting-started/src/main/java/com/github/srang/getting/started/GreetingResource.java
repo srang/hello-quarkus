@@ -1,6 +1,4 @@
-package com.github.srang;
-
-import org.eclipse.microprofile.config.inject.ConfigProperty;
+package com.github.srang.getting.started;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,12 +8,9 @@ import javax.ws.rs.core.MediaType;
 @Path("/hello")
 public class GreetingResource {
 
-    @ConfigProperty(name = "greeting.message")
-    String message;
-
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return message;
+        return "hello";
     }
 }

@@ -1,8 +1,8 @@
-package com.github.srang;
+package com.github.srang.getting.started;
 
-import io.quarkus.test.junit.SubstrateTest;
+import io.quarkus.test.junit.NativeImageTest;
 
-@SubstrateTest
+@NativeImageTest
 public class NativeGreetingResourceIT extends GreetingResourceTest {
 
     // Execute the same tests but in native mode.
