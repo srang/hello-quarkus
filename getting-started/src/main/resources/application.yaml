@@ -1,0 +1,9 @@
+# Configuration file
+# key = value
+greeting:
+  message: hello
+  name: quarkus
+
+"%test":
+  greeting:
+    name: tester
